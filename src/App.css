@@ -15,6 +15,16 @@
   flex: 1;
 }
 
+.search .input {
+  border: none;
+  outline: none;
+  background-color: var(--base-100);
+  color: var(--white-base);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
 .content {
   display: flex;
   justify-content: center;
