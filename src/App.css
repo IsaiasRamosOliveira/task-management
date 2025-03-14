@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  padding: 1.2rem;
+  flex-wrap: wrap;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-base);
+  height: 100%;
+  flex: 1;
+  border-radius: 20px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.content .btn-add {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1.4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #844fc3;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0px 14px 40px -2px #844fc3;
+  color: var(--white-base);
+  cursor: pointer;
+  transition: all 120ms ease;
 }
 
-.card {
-  padding: 2em;
+.content .btn-add:hover {
+  background-color: #784eac;
 }
 
-.read-the-docs {
-  color: #888;
+.content .btn-add:active {
+  background-color: #784eac;
+  scale: 0.9;
 }
+

@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Plus } from '@phosphor-icons/react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const handleAddTask = () => {
+
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <section className='container'>
+      <div className='search'>
+        <div>
+          <h1>Hi Samantha</h1>
+          <p>Welcome back to the workspace, we missed You!</p>
+          <input type="search" name="task" id="task" />
+        </div>
+        <div>
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className='content'>
+        Content
+        <button className='btn-add'><Plus size={22} /></button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </section>
   )
 }
 
